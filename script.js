@@ -1,10 +1,6 @@
-//store variable "rock"
+//create variable for each object
 const rock = "rock"
-
-//store variable "paper"
-const paper= "paper"
-
-//store variable "scissors"
+const paper = "paper"
 const scissors = "scissors"
 
-//randomly return one of the three variables
+//select one variable randomly

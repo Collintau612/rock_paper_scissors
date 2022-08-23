@@ -2,6 +2,7 @@
 const objects = ["rock", "paper", "scissors"]
 
 //select one variable randomly
+const random = Math.floor(Math.random() * objects.length);
 
 //take player input
 

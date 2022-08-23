@@ -1,8 +1,9 @@
 //create variable for each object
-const objects = ["rock", "paper", "scissors"]
+const getComputerChoice = ["rock", "paper", "scissors"]
 
 //select one variable randomly
-const random = Math.floor(Math.random() * objects.length);
+const random = Math.floor(Math.random() * getComputerChoice.length);
+console.log(random, getComputerChoice[random]);
 
 //take player input
 

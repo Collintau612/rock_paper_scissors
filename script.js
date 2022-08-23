@@ -2,8 +2,8 @@
 const getComputerChoice = ["rock", "paper", "scissors"]
 
 //select one variable randomly
-const random = Math.floor(Math.random() * getComputerChoice.length);
-console.log(random, getComputerChoice[random]);
+const computerSelection = Math.floor(Math.random() * getComputerChoice.length);
+console.log(getComputerChoice[computerSelection]);
 
 //take player input
 

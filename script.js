@@ -5,7 +5,19 @@ const getComputerChoice = ["rock", "paper", "scissors"]
 const computerSelection = Math.floor(Math.random() * getComputerChoice.length);
 console.log(getComputerChoice[computerSelection]);
 
-//take player input
+//create prompt
+const playerSelection = prompt("Rock, Paper, or Scissors?");
+
+
+//player selection is rock
+if (playerSelection === "rock" && getComputerChoice[computerSelection] === "rock") {
+    console.log("It's a tie!")
+} else if (playerSelection === "rock" && getComputerChoice[computerSelection] === "paper") {
+    console.log("You lose!")
+} else if (playerSelection === "rock" && getComputerChoice[computerSelection] === "scissors") {
+    console.log("You win!")
+}
+
 
 //Establish rules for games
     //paper > rock

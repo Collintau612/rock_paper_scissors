@@ -18,7 +18,7 @@ if (playerSelection === "rock" && getComputerChoice[computerSelection] === "rock
     console.log("You win! Rock beats scissors")
 }
 
-//player selection if paper
+//player selection is paper
 if (playerSelection === "paper" && getComputerChoice[computerSelection] === "rock") {
     console.log("You win! Paper beats rock")
 } else if (playerSelection === "paper" && getComputerChoice[computerSelection] === "paper") {
@@ -34,6 +34,11 @@ if (playerSelection === "scissors" && getComputerChoice[computerSelection] === "
     console.log("You win! Scissors beats paper")
 } else if (playerSelection === "scissors" && getComputerChoice[computerSelection] === "scissors") {
     console.log("It's a tie!")
+}
+
+//player inputs invalid term
+if (playerSelection !== "rock", "paper", "scissors") {
+    console.log("Invalid. Bitch.")
 }
 
 //Establish rules for games

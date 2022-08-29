@@ -3,11 +3,11 @@ const getComputerChoice = ["rock", "paper", "scissors"]
 
 //select one variable randomly
 const computerSelection = Math.floor(Math.random() * getComputerChoice.length);
-console.log(getComputerChoice[computerSelection]);
+
 
 //create prompt
-const playerSelection = prompt("Rock, Paper, or Scissors?");
-console.log(playerSelection)
+const playerSelection = prompt("Rock, Paper, or Scissors?").toLowerCase();
+
 
 //player selection is rock
 if (playerSelection === "rock" && getComputerChoice[computerSelection] === "rock") {

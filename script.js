@@ -4,7 +4,6 @@ const getComputerChoice = ["rock", "paper", "scissors"]
 //select one variable randomly
 const computerSelection = Math.floor(Math.random() * getComputerChoice.length);
 
-
 //create prompt
 const playerSelection = prompt("Rock, Paper, or Scissors?").toLowerCase();
 
@@ -37,8 +36,10 @@ if (playerSelection === "scissors" && getComputerChoice[computerSelection] === "
 }
 
 //player inputs invalid term
-if (playerSelection !== "rock", "paper", "scissors") {
-    console.log("Invalid. Bitch.")
+if (!["rock", "paper", "scissors"].includes(playerSelection)) {
+    console.log("Invalid")
+} else {
+    console.log()
 }
 
 //Establish rules for games

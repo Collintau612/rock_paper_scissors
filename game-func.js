@@ -6,4 +6,8 @@ function computerSelection (objects) {
     return objects[Math.floor(Math.random() * objects.length)]
 }
 
-console.log(computerSelection(objects))
+//Make function for players to write in their selection
+function playerSelection (objects) {
+    let choice = prompt("Rock, Paper, Scissors?").toLowerCase()
+    return choice
+}

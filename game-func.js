@@ -8,6 +8,11 @@ function computerSelection (objects) {
 
 //Make function for players to write in their selection
 function playerSelection (objects) {
-    let choice = prompt("Rock, Paper, Scissors?").toLowerCase()
+    let choice = prompt("Rock, Paper, Scissors?").toLowerCase();
+    if (!["rock", "paper", "scissors"].includes(choice)) {
+        console.log("Invalid")
+    }
     return choice
 }
+console.log(playerSelection(objects))
+

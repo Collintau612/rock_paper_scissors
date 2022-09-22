@@ -6,7 +6,7 @@ function computerSelection (objects) {
     let choice = objects[Math.floor(Math.random() * objects.length)];
     return choice;
 }
-computerSelection(objects)
+
 
 //Make function for players to input their selection
 function playerSelection () {
@@ -16,10 +16,10 @@ function playerSelection () {
     }
     return choice
 }
-playerSelection()
+
 
 //Make function for players to write in their selection
-function playRound () {
+function playRound (playerSelection, computerSelection) {
     
     if (playerSelection == "rock" && computerSelection == "rock") {
        return console.log("It's a tie!")
@@ -43,4 +43,4 @@ function playRound () {
 }
 
 
-playRound(playerSelection, computerSelection)
+playRound(playerSelection(), computerSelection(objects))

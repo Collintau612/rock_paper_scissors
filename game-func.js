@@ -43,4 +43,6 @@ function playRound (playerSelection, computerSelection) {
 }
 
 
-playRound(playerSelection(), computerSelection(objects))
+for (i=0; i<5; i++) {
+    playRound(playerSelection(), computerSelection(objects))
+}

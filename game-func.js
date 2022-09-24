@@ -1,6 +1,7 @@
 //Create array of options for computer selection
 const objects = ["rock", "paper", "scissors"]
 
+
 //Make function to randomly choose object for computer selection 
 function computerSelection (objects) {
     let choice = objects[Math.floor(Math.random() * objects.length)];

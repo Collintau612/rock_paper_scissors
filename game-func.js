@@ -1,3 +1,8 @@
+//Creat variables for Point Storage
+let playerScore = 0;
+let computerScore = 0;
+
+
 //Create array of options for computer selection
 const objects = ["rock", "paper", "scissors"]
 
